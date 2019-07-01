@@ -1,0 +1,34 @@
+# 所有环境公用的配置属性
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+info:
+  app-name: spring-boot-demo
+  author: show
+  email: 1004108488@qq.com
+
+#默认启动 dev 环境的配置
+spring:
+  profiles:
+    active: dev
+# 连字符
+---
+# profile=x的专用属性，也就是某个环境下的专用属性
+# 开发环境
+spring:
+  profiles: dev
+
+---
+# profile=y的专用属性，也就是某个环境下的专用属性
+# 生产环境
+spring:
+  profiles: prod
+server:
+  tomcat:
+    max-threads: 300
+    max-connections: 1000
