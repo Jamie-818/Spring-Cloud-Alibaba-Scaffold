@@ -7,3 +7,5 @@ spring:
       # >=6.x com.mysql.cj.jdbc.Driver
       # <=5.x com.mysql.jdbc.Driver
       driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8010

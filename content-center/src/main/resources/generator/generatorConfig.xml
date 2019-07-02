@@ -21,6 +21,7 @@
                         userId="${jdbc.user}"
                         password="${jdbc.password}">
         </jdbcConnection>
+
         <!--实体-->
         <javaModelGenerator targetPackage="com.show.itmuch.contentcenter.domain.entity.${moduleName}"
                             targetProject="src/main/java"/>
