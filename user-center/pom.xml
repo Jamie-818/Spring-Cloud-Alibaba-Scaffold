@@ -49,6 +49,12 @@
             <scope>test</scope>
         </dependency>
         <!-- SpringCloud -->
+
+        <!--spring-cloud-starter-{Spring Cloud子项目的名称}-{模块名称} -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
         <!-- Other -->
         <dependency><!--tkMybatis-->
             <groupId>tk.mybatis</groupId>
@@ -58,7 +64,6 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.19</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -87,7 +92,6 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.19</version>
                     </dependency>
                     <dependency>
                         <groupId>tk.mybatis</groupId>
