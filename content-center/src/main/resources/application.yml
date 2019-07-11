@@ -15,3 +15,7 @@ spring:
     name: center
 server:
   port: 8010
+ribbon:
+  eager-load:
+    enabled: true #开启饥饿加载
+    clients: user #为那个服务开启

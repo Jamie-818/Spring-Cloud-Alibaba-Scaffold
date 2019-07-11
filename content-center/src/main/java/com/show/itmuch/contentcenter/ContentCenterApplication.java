@@ -11,15 +11,14 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan("com.show.itmuch.contentcenter")
 public class ContentCenterApplication {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        SpringApplication.run(ContentCenterApplication.class, args);
-    }
+    SpringApplication.run(ContentCenterApplication.class, args);
+  }
 
-    @Bean
-    public RestTemplate restTemplate() {
+  @Bean
+  public RestTemplate restTemplate() {
 
-        return new RestTemplate();
-    }
-
+    return new RestTemplate();
+  }
 }

@@ -13,11 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/shares")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class ShareController {
-    private final ShareService shareService;
+  private final ShareService shareService;
 
-    @GetMapping("{id}")
-    public ShareDTO findById(@PathVariable Integer id) {
-
-        return this.shareService.findById(id);
-    }
+  @GetMapping("{id}")
+  public ShareDTO findById(@PathVariable Integer id) {
+    return this.shareService.findById(id);
+  }
 }

@@ -13,12 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("users")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class UserController {
-    private final UserService userService;
+  private final UserService userService;
 
-    @GetMapping("/{id}")
-    public User findById(@PathVariable Integer id) {
-
-        return userService.findById(id);
-    }
+  @GetMapping("/{id}")
+  public User findById(@PathVariable Integer id) {
+    return userService.findById(id);
+  }
 }
-

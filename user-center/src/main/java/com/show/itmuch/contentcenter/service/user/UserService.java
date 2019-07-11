@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class UserService {
-    private final UserMapper userMapper;
+  private final UserMapper userMapper;
 
-    public User findById(Integer id) {
-        // select * from user where id = #{id}
-        return this.userMapper.selectByPrimaryKey(id);
-    }
+  public User findById(Integer id) {
+    // select * from user where id = #{id}
+    return this.userMapper.selectByPrimaryKey(id);
+  }
 }

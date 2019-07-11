@@ -7,4 +7,5 @@ import ribbonconfiguration.RibbonConfiguration;
 @Configuration
 @RibbonClient(name = "user", configuration = RibbonConfiguration.class)
 public class UserCenterRibbonConfiguration {
+  //
 }

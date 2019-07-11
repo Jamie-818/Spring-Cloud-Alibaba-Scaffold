@@ -1,15 +1,27 @@
 package ribbonconfiguration;
 
 import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RandomRule;
+import com.show.itmuch.contentcenter.configuration.NacosWeightedRule;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 自定义Ribbon负载均衡规则
+ *
+ * @author xuanweiyao
+ * @date 10:11 2019/7/11
+ */
 @Configuration
 public class RibbonConfiguration {
-    @Bean
-    public IRule ribbonRule() {
-
-        return new RandomRule();
-    }
+  /**
+   * 使用 Nacos Client 的负载均衡算法
+   *
+   * @author xuanweiyao
+   * @date 10:10 2019/7/11
+   * @return com.netflix.loadbalancer.IRule
+   */
+  @Bean
+  public IRule ribbonRule() {
+    return new NacosWeightedRule();
+  }
 }
