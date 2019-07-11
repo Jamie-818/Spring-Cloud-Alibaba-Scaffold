@@ -11,6 +11,12 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+        # 指定namespance
+        # namespace: cc643c82-9111-48b5-acd5-27868413286f
+        # 指定集群名称
+        # NJ
+        cluster-name: NJ
+        #元数据设置
   application:
     name: center
 server:
